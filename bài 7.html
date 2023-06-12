@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function tinhtien(soPhut) {
+      const phiThueBao = 25000;
+      let cuocGoi = 0;
+      if (soPhut <= 50) {
+          cuocGoi = soPhut *600;
+      } else if (soPhut <= 200) {
+          cuocGoi = 50 * 600 +(soPhut - 50)*400
+      } else {
+          cuocGoi = 50 * 600 + 150 *400 +(soPhut-200)*200;
+      }
+      return phiThueBao + cuocGoi
+  }
+</script>
+</body>
+</html>

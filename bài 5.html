@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="zxc"></p>
+<br>
+<p id="1"></p>
+<script>
+  let baikiemtra = parseInt(prompt('nhập điểm'));
+  let giuaki = parseInt(prompt('nhập điểm'));
+  let cuoiki = parseInt(prompt('nhập điểm'));
+  let diemtrungbinh = ((baikiemtra + giuaki*2 + cuoiki*3)/6) ;
+  document.getElementById('zxc').innerHTML= diemtrungbinh
+  if (diemtrungbinh >=9){
+    document.getElementById('1').innerText = 'Xếp hạng xuất sắc';
+  } else if (diemtrungbinh >=8 && diemtrungbinh <9) {
+    document.write('Xếp hạng giỏi');
+  } else if (diemtrungbinh >=6.5 && diemtrungbinh<8) {
+    document.write('Xếp hạng khá')
+  } else {
+    document.write('Xếp hạng yếu')
+  }
+</script>
+</body>
+</html>
